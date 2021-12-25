@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bc5f8f06-d320-4f93-9cbc-e9b2e2d2efce": {
+      "ProjectGuid": "bc5f8f06-d320-4f93-9cbc-e9b2e2d2efce",
+      "DisplayName": "Weather Application",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
