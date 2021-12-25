@@ -36,8 +36,6 @@ namespace Weather_Application
             public long sunrise { get; set; }
             public long sunset { get; set; }
         }
-
-
         public class root
         {
             public coord coord { get; set; }

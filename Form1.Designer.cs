@@ -45,6 +45,11 @@
             this.picIcon = new System.Windows.Forms.PictureBox();
             this.details = new System.Windows.Forms.Label();
             this.condition = new System.Windows.Forms.Label();
+            this.temperature = new System.Windows.Forms.Label();
+            this.labTemperature = new System.Windows.Forms.Label();
+            this.labHumidity = new System.Windows.Forms.Label();
+            this.Humidity = new System.Windows.Forms.Label();
+            this.FLP = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +64,6 @@
             this.label.Size = new System.Drawing.Size(95, 34);
             this.label.TabIndex = 0;
             this.label.Text = "City: ";
-            //this.label.Click += new System.EventHandler(this.label2_Click);
             // 
             // TBCity
             // 
@@ -68,7 +72,6 @@
             this.TBCity.Name = "TBCity";
             this.TBCity.Size = new System.Drawing.Size(361, 42);
             this.TBCity.TabIndex = 1;
-            //this.TBCity.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // searchBtn
             // 
@@ -90,11 +93,11 @@
             this.labCondition.BackColor = System.Drawing.Color.Transparent;
             this.labCondition.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCondition.ForeColor = System.Drawing.Color.White;
-            this.labCondition.Location = new System.Drawing.Point(218, 149);
+            this.labCondition.Location = new System.Drawing.Point(194, 149);
             this.labCondition.Name = "labCondition";
-            this.labCondition.Size = new System.Drawing.Size(151, 34);
+            this.labCondition.Size = new System.Drawing.Size(68, 34);
             this.labCondition.TabIndex = 3;
-            this.labCondition.Text = "Condition";
+            this.labCondition.Text = "N/A";
             // 
             // labDetails
             // 
@@ -102,12 +105,11 @@
             this.labDetails.BackColor = System.Drawing.Color.Transparent;
             this.labDetails.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labDetails.ForeColor = System.Drawing.Color.White;
-            this.labDetails.Location = new System.Drawing.Point(218, 215);
+            this.labDetails.Location = new System.Drawing.Point(194, 215);
             this.labDetails.Name = "labDetails";
-            this.labDetails.Size = new System.Drawing.Size(115, 34);
+            this.labDetails.Size = new System.Drawing.Size(68, 34);
             this.labDetails.TabIndex = 4;
-            this.labDetails.Text = "Details";
-            //this.labDetails.Click += new System.EventHandler(this.labDetails_Click);
+            this.labDetails.Text = "N/A";
             // 
             // sunrise
             // 
@@ -120,7 +122,6 @@
             this.sunrise.Size = new System.Drawing.Size(136, 34);
             this.sunrise.TabIndex = 5;
             this.sunrise.Text = "Sunrise:";
-            //this.sunrise.Click += new System.EventHandler(this.labSunrise_Click);
             // 
             // sunset
             // 
@@ -133,7 +134,6 @@
             this.sunset.Size = new System.Drawing.Size(126, 34);
             this.sunset.TabIndex = 6;
             this.sunset.Text = "Sunset:";
-            //this.sunset.Click += new System.EventHandler(this.labSunset_Click);
             // 
             // labSunrise
             // 
@@ -141,12 +141,11 @@
             this.labSunrise.BackColor = System.Drawing.Color.Transparent;
             this.labSunrise.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labSunrise.ForeColor = System.Drawing.Color.White;
-            this.labSunrise.Location = new System.Drawing.Point(218, 278);
+            this.labSunrise.Location = new System.Drawing.Point(194, 278);
             this.labSunrise.Name = "labSunrise";
             this.labSunrise.Size = new System.Drawing.Size(68, 34);
             this.labSunrise.TabIndex = 7;
             this.labSunrise.Text = "N/A";
-            //this.labSunrise.Click += new System.EventHandler(this.label3_Click);
             // 
             // labSunset
             // 
@@ -154,7 +153,7 @@
             this.labSunset.BackColor = System.Drawing.Color.Transparent;
             this.labSunset.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labSunset.ForeColor = System.Drawing.Color.White;
-            this.labSunset.Location = new System.Drawing.Point(218, 335);
+            this.labSunset.Location = new System.Drawing.Point(194, 335);
             this.labSunset.Name = "labSunset";
             this.labSunset.Size = new System.Drawing.Size(68, 34);
             this.labSunset.TabIndex = 8;
@@ -166,12 +165,11 @@
             this.labPressure.BackColor = System.Drawing.Color.Transparent;
             this.labPressure.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labPressure.ForeColor = System.Drawing.Color.White;
-            this.labPressure.Location = new System.Drawing.Point(732, 215);
+            this.labPressure.Location = new System.Drawing.Point(704, 278);
             this.labPressure.Name = "labPressure";
             this.labPressure.Size = new System.Drawing.Size(68, 34);
             this.labPressure.TabIndex = 12;
             this.labPressure.Text = "N/A";
-            //this.labPressure.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // labWindSpeed
             // 
@@ -179,7 +177,7 @@
             this.labWindSpeed.BackColor = System.Drawing.Color.Transparent;
             this.labWindSpeed.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labWindSpeed.ForeColor = System.Drawing.Color.White;
-            this.labWindSpeed.Location = new System.Drawing.Point(732, 149);
+            this.labWindSpeed.Location = new System.Drawing.Point(704, 215);
             this.labWindSpeed.Name = "labWindSpeed";
             this.labWindSpeed.Size = new System.Drawing.Size(68, 34);
             this.labWindSpeed.TabIndex = 11;
@@ -191,7 +189,7 @@
             this.pressure.BackColor = System.Drawing.Color.Transparent;
             this.pressure.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pressure.ForeColor = System.Drawing.Color.White;
-            this.pressure.Location = new System.Drawing.Point(504, 215);
+            this.pressure.Location = new System.Drawing.Point(504, 278);
             this.pressure.Name = "pressure";
             this.pressure.Size = new System.Drawing.Size(151, 34);
             this.pressure.TabIndex = 10;
@@ -203,12 +201,11 @@
             this.windSpeed.BackColor = System.Drawing.Color.Transparent;
             this.windSpeed.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.windSpeed.ForeColor = System.Drawing.Color.White;
-            this.windSpeed.Location = new System.Drawing.Point(504, 149);
+            this.windSpeed.Location = new System.Drawing.Point(504, 215);
             this.windSpeed.Name = "windSpeed";
             this.windSpeed.Size = new System.Drawing.Size(197, 34);
             this.windSpeed.TabIndex = 9;
             this.windSpeed.Text = "Wind Speed:";
-            //this.windSpeed.Click += new System.EventHandler(this.windSpeed_Click);
             // 
             // picIcon
             // 
@@ -231,7 +228,6 @@
             this.details.Size = new System.Drawing.Size(128, 34);
             this.details.TabIndex = 15;
             this.details.Text = "Details:";
-            //this.details.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // condition
             // 
@@ -245,13 +241,75 @@
             this.condition.Size = new System.Drawing.Size(164, 34);
             this.condition.TabIndex = 14;
             this.condition.Text = "Condition:";
-            //this.condition.Click += new System.EventHandler(this.label3_Click_2);
+            // 
+            // temperature
+            // 
+            this.temperature.AutoSize = true;
+            this.temperature.BackColor = System.Drawing.Color.Transparent;
+            this.temperature.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temperature.ForeColor = System.Drawing.Color.White;
+            this.temperature.Location = new System.Drawing.Point(504, 149);
+            this.temperature.Name = "temperature";
+            this.temperature.Size = new System.Drawing.Size(217, 34);
+            this.temperature.TabIndex = 16;
+            this.temperature.Text = "Temperature: ";
+            // 
+            // labTemperature
+            // 
+            this.labTemperature.AutoSize = true;
+            this.labTemperature.BackColor = System.Drawing.Color.Transparent;
+            this.labTemperature.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labTemperature.ForeColor = System.Drawing.Color.White;
+            this.labTemperature.Location = new System.Drawing.Point(704, 149);
+            this.labTemperature.Name = "labTemperature";
+            this.labTemperature.Size = new System.Drawing.Size(68, 34);
+            this.labTemperature.TabIndex = 17;
+            this.labTemperature.Text = "N/A";
+            // 
+            // labHumidity
+            // 
+            this.labHumidity.AutoSize = true;
+            this.labHumidity.BackColor = System.Drawing.Color.Transparent;
+            this.labHumidity.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labHumidity.ForeColor = System.Drawing.Color.White;
+            this.labHumidity.Location = new System.Drawing.Point(704, 335);
+            this.labHumidity.Name = "labHumidity";
+            this.labHumidity.Size = new System.Drawing.Size(68, 34);
+            this.labHumidity.TabIndex = 19;
+            this.labHumidity.Text = "N/A";
+            // 
+            // Humidity
+            // 
+            this.Humidity.AutoSize = true;
+            this.Humidity.BackColor = System.Drawing.Color.Transparent;
+            this.Humidity.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Humidity.ForeColor = System.Drawing.Color.White;
+            this.Humidity.Location = new System.Drawing.Point(504, 335);
+            this.Humidity.Name = "Humidity";
+            this.Humidity.Size = new System.Drawing.Size(157, 34);
+            this.Humidity.TabIndex = 18;
+            this.Humidity.Text = "Humidity:";
+            // 
+            // FLP
+            // 
+            this.FLP.AutoScroll = true;
+            this.FLP.BackColor = System.Drawing.Color.Transparent;
+            this.FLP.Location = new System.Drawing.Point(43, 541);
+            this.FLP.Name = "FLP";
+            this.FLP.Size = new System.Drawing.Size(1014, 135);
+            this.FLP.TabIndex = 20;
+            this.FLP.WrapContents = false;
             // 
             // Form1
             // 
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1121, 738);
+            this.ClientSize = new System.Drawing.Size(1097, 818);
+            this.Controls.Add(this.FLP);
+            this.Controls.Add(this.labHumidity);
+            this.Controls.Add(this.Humidity);
+            this.Controls.Add(this.labTemperature);
+            this.Controls.Add(this.temperature);
             this.Controls.Add(this.details);
             this.Controls.Add(this.condition);
             this.Controls.Add(this.picIcon);
@@ -270,7 +328,6 @@
             this.Controls.Add(this.label);
             this.DoubleBuffered = true;
             this.Name = "Form1";
-            //this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -295,6 +352,11 @@
         private System.Windows.Forms.PictureBox picIcon;
         private System.Windows.Forms.Label details;
         private System.Windows.Forms.Label condition;
+        private System.Windows.Forms.Label temperature;
+        private System.Windows.Forms.Label labTemperature;
+        private System.Windows.Forms.Label labHumidity;
+        private System.Windows.Forms.Label Humidity;
+        private System.Windows.Forms.FlowLayoutPanel FLP;
     }
 }
 
