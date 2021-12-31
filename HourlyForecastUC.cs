@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Weather_Application
 {
-    public partial class ForecastUC : UserControl
+    public partial class HourlyForecastUC : UserControl
     {
-        public ForecastUC()
+        public HourlyForecastUC()
         {
             InitializeComponent();
         }
-
     }
 }

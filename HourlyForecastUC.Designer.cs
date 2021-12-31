@@ -1,6 +1,6 @@
 ﻿namespace Weather_Application
 {
-    partial class ForecastUC
+    partial class HourlyForecastUC
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,12 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picWeatherIcon = new System.Windows.Forms.PictureBox();
-            this.labDT = new System.Windows.Forms.Label();
-            this.labWeatherDescription = new System.Windows.Forms.Label();
             this.labTemp = new System.Windows.Forms.Label();
+            this.labWeatherDescription = new System.Windows.Forms.Label();
+            this.labDT = new System.Windows.Forms.Label();
+            this.picWeatherIcon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picWeatherIcon)).BeginInit();
             this.SuspendLayout();
+            // 
+            // labTemp
+            // 
+            this.labTemp.AutoSize = true;
+            this.labTemp.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labTemp.ForeColor = System.Drawing.Color.White;
+            this.labTemp.Location = new System.Drawing.Point(5, 75);
+            this.labTemp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labTemp.Name = "labTemp";
+            this.labTemp.Size = new System.Drawing.Size(61, 23);
+            this.labTemp.TabIndex = 8;
+            this.labTemp.Text = "Temp";
+            // 
+            // labWeatherDescription
+            // 
+            this.labWeatherDescription.AutoSize = true;
+            this.labWeatherDescription.BackColor = System.Drawing.Color.Transparent;
+            this.labWeatherDescription.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labWeatherDescription.ForeColor = System.Drawing.Color.White;
+            this.labWeatherDescription.Location = new System.Drawing.Point(5, 106);
+            this.labWeatherDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labWeatherDescription.Name = "labWeatherDescription";
+            this.labWeatherDescription.Size = new System.Drawing.Size(71, 13);
+            this.labWeatherDescription.TabIndex = 7;
+            this.labWeatherDescription.Text = "Description";
+            // 
+            // labDT
+            // 
+            this.labDT.AutoSize = true;
+            this.labDT.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labDT.ForeColor = System.Drawing.Color.White;
+            this.labDT.Location = new System.Drawing.Point(5, 3);
+            this.labDT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labDT.Name = "labDT";
+            this.labDT.Size = new System.Drawing.Size(56, 16);
+            this.labDT.TabIndex = 6;
+            this.labDT.Text = "Sunday";
             // 
             // picWeatherIcon
             // 
@@ -41,44 +78,10 @@
             this.picWeatherIcon.Margin = new System.Windows.Forms.Padding(2);
             this.picWeatherIcon.Name = "picWeatherIcon";
             this.picWeatherIcon.Size = new System.Drawing.Size(87, 81);
-            this.picWeatherIcon.TabIndex = 0;
+            this.picWeatherIcon.TabIndex = 5;
             this.picWeatherIcon.TabStop = false;
             // 
-            // labDT
-            // 
-            this.labDT.AutoSize = true;
-            this.labDT.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labDT.Location = new System.Drawing.Point(5, 3);
-            this.labDT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labDT.Name = "labDT";
-            this.labDT.Size = new System.Drawing.Size(56, 16);
-            this.labDT.TabIndex = 1;
-            this.labDT.Text = "Sunday";
-            // 
-            // labWeatherDescription
-            // 
-            this.labWeatherDescription.AutoSize = true;
-            this.labWeatherDescription.BackColor = System.Drawing.Color.Transparent;
-            this.labWeatherDescription.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labWeatherDescription.Location = new System.Drawing.Point(5, 106);
-            this.labWeatherDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labWeatherDescription.Name = "labWeatherDescription";
-            this.labWeatherDescription.Size = new System.Drawing.Size(71, 13);
-            this.labWeatherDescription.TabIndex = 3;
-            this.labWeatherDescription.Text = "Description";
-            // 
-            // labTemp
-            // 
-            this.labTemp.AutoSize = true;
-            this.labTemp.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labTemp.Location = new System.Drawing.Point(5, 75);
-            this.labTemp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labTemp.Name = "labTemp";
-            this.labTemp.Size = new System.Drawing.Size(61, 23);
-            this.labTemp.TabIndex = 4;
-            this.labTemp.Text = "Temp";
-            // 
-            // ForecastUC
+            // HourlyForecastUC
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,7 +94,8 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "ForecastUC";
+            this.Name = "HourlyForecastUC";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Size = new System.Drawing.Size(134, 128);
             ((System.ComponentModel.ISupportInitialize)(this.picWeatherIcon)).EndInit();
             this.ResumeLayout(false);
@@ -101,9 +105,9 @@
 
         #endregion
 
-        public System.Windows.Forms.PictureBox picWeatherIcon;
-        public System.Windows.Forms.Label labDT;
-        public System.Windows.Forms.Label labWeatherDescription;
         public System.Windows.Forms.Label labTemp;
+        public System.Windows.Forms.Label labWeatherDescription;
+        public System.Windows.Forms.Label labDT;
+        public System.Windows.Forms.PictureBox picWeatherIcon;
     }
 }

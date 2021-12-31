@@ -28,9 +28,17 @@ namespace Weather_Application
 
         }
 
+        public class hourly
+        {
+            public long dt { get; set; }
+            public double temp { get; set; }
+            public List <weather> weather { get; set; }
+        }
+
         public class ForecastInfo
         {
             public List<daily> daily { get; set; }
+            public List<hourly> hourly { get; set; }
         }
         
     }

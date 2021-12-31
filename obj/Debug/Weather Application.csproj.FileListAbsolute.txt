@@ -13,3 +13,4 @@ C:\Users\Tony\Desktop\WeatherApp\Weather Application\obj\Debug\Weather Applicati
 C:\Users\Tony\Desktop\WeatherApp\Weather Application\obj\Debug\Weather Application.exe
 C:\Users\Tony\Desktop\WeatherApp\Weather Application\obj\Debug\Weather Application.pdb
 C:\Users\Tony\Desktop\WeatherApp\Weather Application\obj\Debug\Weather_Application.ForecastUC.resources
+C:\Users\Tony\Desktop\WeatherApp\Weather Application\obj\Debug\Weather_Application.HourlyForecastUC.resources
