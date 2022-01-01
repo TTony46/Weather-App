@@ -26,7 +26,7 @@ namespace Weather_Application
             getForecast();
         }
 
-        string APIKey = "536b35df309bb1a29e70e47ad9b2e065";
+        string APIKey = "USER_API_FROM_OPENWEATHERMAP";
 
         double lon;
         double lat;
