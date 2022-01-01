@@ -26,7 +26,7 @@ namespace Weather_Application
             getForecast();
         }
 
-        string APIKey = "USER_API_FROM_OPENWEATHERMAP";
+        string APIKey = "536b35df309bb1a29e70e47ad9b2e065";
 
         double lon;
         double lat;
@@ -104,6 +104,7 @@ namespace Weather_Application
                 if (oldTbText != "" && TBCity.Text != oldTbText)  // If the user enters a different city,
                 {                                                 // this 'if' statement clears the old forecasts.
                     CustomFLP.Controls.Clear();
+                    HourlyFLP.Controls.Clear();
                 }
                 for (int i = 0; i < 8; i++)
                 {
