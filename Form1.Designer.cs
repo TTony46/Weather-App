@@ -46,7 +46,7 @@
             this.labHumidity = new System.Windows.Forms.Label();
             this.Humidity = new System.Windows.Forms.Label();
             this.CustomFLP = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.CloseButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.HourlyFLP = new System.Windows.Forms.FlowLayoutPanel();
             this.TextHourlyForecast = new System.Windows.Forms.Label();
@@ -253,26 +253,26 @@
             this.CustomFLP.TabIndex = 20;
             this.CustomFLP.WrapContents = false;
             // 
-            // button1
+            // CloseButton
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1121, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 25);
-            this.button1.TabIndex = 21;
-            this.button1.TabStop = false;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.CloseButton.BackColor = System.Drawing.Color.Transparent;
+            this.CloseButton.FlatAppearance.BorderSize = 0;
+            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseButton.ForeColor = System.Drawing.Color.White;
+            this.CloseButton.Location = new System.Drawing.Point(1121, 6);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(42, 25);
+            this.CloseButton.TabIndex = 21;
+            this.CloseButton.TabStop = false;
+            this.CloseButton.Text = "X";
+            this.CloseButton.UseVisualStyleBackColor = false;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.CloseButton);
             this.panel1.Controls.Add(this.label);
             this.panel1.Controls.Add(this.TBCity);
             this.panel1.Controls.Add(this.searchBtn);
@@ -373,7 +373,7 @@
         private System.Windows.Forms.Label labHumidity;
         private System.Windows.Forms.Label Humidity;
         private System.Windows.Forms.FlowLayoutPanel CustomFLP;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel HourlyFLP;
         private System.Windows.Forms.Label TextHourlyForecast;
