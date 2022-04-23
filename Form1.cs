@@ -56,7 +56,7 @@ namespace Weather_Application
             return t.Trim();
         }
         
-        string APIKey = "536b35df309bb1a29e70e47ad9b2e065";
+        string APIKey = "USER_API_KEY";
         double lon;
         double lat;
         string oldTbText;
