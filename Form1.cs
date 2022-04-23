@@ -56,7 +56,7 @@ namespace Weather_Application
             return t.Trim();
         }
         
-        string APIKey = "USER_API_FROM_OPENWEATHERMAP";
+        string APIKey = "536b35df309bb1a29e70e47ad9b2e065";
         double lon;
         double lat;
         string oldTbText;
@@ -89,7 +89,7 @@ namespace Weather_Application
                 }
                 catch (WebException)
                 {
-                    // If user enters invalid city, it does 
+                    // If user enters invalid city, it does nothing
                     validCity = false;
                 }
                 
@@ -139,6 +139,17 @@ namespace Weather_Application
             }
             oldTbText = TBCity.Text.ToString();
         }
+       
+        private void CheckEnterKeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                getWeather();
+                getForecast();
+
+                e.Handled = true;
+            }
+        }
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
@@ -150,6 +161,7 @@ namespace Weather_Application
         {
             this.Close();
         }
+        
     }
 }
 

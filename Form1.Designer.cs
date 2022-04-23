@@ -64,7 +64,7 @@
             this.label.ForeColor = System.Drawing.Color.White;
             this.label.Location = new System.Drawing.Point(12, 8);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(63, 23);
+            this.label.Size = new System.Drawing.Size(95, 34);
             this.label.TabIndex = 0;
             this.label.Text = "City: ";
             // 
@@ -73,8 +73,9 @@
             this.TBCity.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TBCity.Location = new System.Drawing.Point(75, 4);
             this.TBCity.Name = "TBCity";
-            this.TBCity.Size = new System.Drawing.Size(361, 30);
+            this.TBCity.Size = new System.Drawing.Size(361, 42);
             this.TBCity.TabIndex = 1;
+            this.TBCity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckEnterKeyPress);
             // 
             // searchBtn
             // 
@@ -110,7 +111,7 @@
             this.sunrise.ForeColor = System.Drawing.Color.White;
             this.sunrise.Location = new System.Drawing.Point(462, 246);
             this.sunrise.Name = "sunrise";
-            this.sunrise.Size = new System.Drawing.Size(61, 16);
+            this.sunrise.Size = new System.Drawing.Size(98, 25);
             this.sunrise.TabIndex = 5;
             this.sunrise.Text = "Sunrise:";
             // 
@@ -122,7 +123,7 @@
             this.sunset.ForeColor = System.Drawing.Color.White;
             this.sunset.Location = new System.Drawing.Point(612, 246);
             this.sunset.Name = "sunset";
-            this.sunset.Size = new System.Drawing.Size(59, 16);
+            this.sunset.Size = new System.Drawing.Size(91, 25);
             this.sunset.TabIndex = 6;
             this.sunset.Text = "Sunset:";
             // 
@@ -134,7 +135,7 @@
             this.labSunrise.ForeColor = System.Drawing.Color.White;
             this.labSunrise.Location = new System.Drawing.Point(523, 246);
             this.labSunrise.Name = "labSunrise";
-            this.labSunrise.Size = new System.Drawing.Size(31, 16);
+            this.labSunrise.Size = new System.Drawing.Size(50, 25);
             this.labSunrise.TabIndex = 7;
             this.labSunrise.Text = "N/A";
             // 
@@ -146,7 +147,7 @@
             this.labSunset.ForeColor = System.Drawing.Color.White;
             this.labSunset.Location = new System.Drawing.Point(671, 246);
             this.labSunset.Name = "labSunset";
-            this.labSunset.Size = new System.Drawing.Size(31, 16);
+            this.labSunset.Size = new System.Drawing.Size(50, 25);
             this.labSunset.TabIndex = 8;
             this.labSunset.Text = "N/A";
             // 
@@ -158,7 +159,7 @@
             this.labPressure.ForeColor = System.Drawing.Color.White;
             this.labPressure.Location = new System.Drawing.Point(594, 269);
             this.labPressure.Name = "labPressure";
-            this.labPressure.Size = new System.Drawing.Size(31, 16);
+            this.labPressure.Size = new System.Drawing.Size(50, 25);
             this.labPressure.TabIndex = 12;
             this.labPressure.Text = "N/A";
             // 
@@ -170,7 +171,7 @@
             this.labWindSpeed.ForeColor = System.Drawing.Color.White;
             this.labWindSpeed.Location = new System.Drawing.Point(456, 268);
             this.labWindSpeed.Name = "labWindSpeed";
-            this.labWindSpeed.Size = new System.Drawing.Size(31, 16);
+            this.labWindSpeed.Size = new System.Drawing.Size(50, 25);
             this.labWindSpeed.TabIndex = 11;
             this.labWindSpeed.Text = "N/A";
             // 
@@ -182,7 +183,7 @@
             this.pressure.ForeColor = System.Drawing.Color.White;
             this.pressure.Location = new System.Drawing.Point(526, 268);
             this.pressure.Name = "pressure";
-            this.pressure.Size = new System.Drawing.Size(69, 16);
+            this.pressure.Size = new System.Drawing.Size(108, 25);
             this.pressure.TabIndex = 10;
             this.pressure.Text = "Pressure:";
             // 
@@ -194,7 +195,7 @@
             this.windSpeed.ForeColor = System.Drawing.Color.White;
             this.windSpeed.Location = new System.Drawing.Point(414, 268);
             this.windSpeed.Name = "windSpeed";
-            this.windSpeed.Size = new System.Drawing.Size(45, 16);
+            this.windSpeed.Size = new System.Drawing.Size(72, 25);
             this.windSpeed.TabIndex = 9;
             this.windSpeed.Text = "Wind:";
             // 
@@ -216,7 +217,7 @@
             this.labTemperature.ForeColor = System.Drawing.Color.White;
             this.labTemperature.Location = new System.Drawing.Point(572, 125);
             this.labTemperature.Name = "labTemperature";
-            this.labTemperature.Size = new System.Drawing.Size(116, 59);
+            this.labTemperature.Size = new System.Drawing.Size(173, 86);
             this.labTemperature.TabIndex = 17;
             this.labTemperature.Text = "N/A";
             // 
@@ -239,7 +240,7 @@
             this.Humidity.ForeColor = System.Drawing.Color.White;
             this.Humidity.Location = new System.Drawing.Point(674, 269);
             this.Humidity.Name = "Humidity";
-            this.Humidity.Size = new System.Drawing.Size(69, 16);
+            this.Humidity.Size = new System.Drawing.Size(112, 25);
             this.Humidity.TabIndex = 18;
             this.Humidity.Text = "Humidity:";
             // 
@@ -351,6 +352,7 @@
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
 
         }
 
